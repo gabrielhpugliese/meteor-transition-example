@@ -1,0 +1,48 @@
+<head>
+  <title>layouts</title>
+</head>
+
+<body>
+</body>
+
+<template name="LayoutOne">
+  <div>
+    <h1>Layout One</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Page One</a>
+        </li>
+        <li>
+          <a href="/two">Page Two</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article class="layout {{currentPage}}">
+      {{> yield}}
+    </article>
+
+    <footer>
+      {{> yield "footer"}}
+    </footer>
+  </div>
+</template>
+
+<template name="PageOne">
+  <h2>Page One</h2>
+
+
+  {{#contentFor "footer"}}
+    Page One Footer
+  {{/contentFor}}
+</template>
+
+<template name="PageTwo">
+  <h2>Page Two</h2>
+
+  {{#contentFor "footer"}}
+    Page Two Footer
+  {{/contentFor}}
+</template>

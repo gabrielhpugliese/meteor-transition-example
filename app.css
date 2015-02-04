@@ -1,0 +1,19 @@
+.layout {
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+}
+
+.one {
+  padding: 10px;
+  background: #999;
+  height: 200px;
+}
+
+.two {
+  padding: 10px;
+  background: #aaa;
+  height: 100px;
+}
